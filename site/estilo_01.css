@@ -8,11 +8,11 @@ body{
 	  line-height: 1.6;
 	
 }
-
+/*muda a borda, e margens, cor das bordas... do 'quadrado' principal */
 .lugar {
-	border-color: #ccc #999 #999 #CCC;
+	border-color: #FFFAF0;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 1px;
 	margin-bottom: 30px;
 	padding: 20px;
 
@@ -20,14 +20,16 @@ body{
 
 .lugar h2 {
 	
-	border-bottom: 1px dashed #5C6818;
+	border-bottom: 1px dashed #F5F5F5;
 	margin: 1px;
 }
+
 body {
-	background: #CC7766 url('noise.png');
+	background: #FFFAF0 url('noise.png');
 	background-color: rgba(201, 76, 76, 0.3);
 }
 
+/*Muda o "clique aqui para mais informações" */
 .lugar a {
 	color: #2C11AF;
 	font-weight: bold;
@@ -61,15 +63,14 @@ a:hover { // :focus, :visited, :active
 }
 
 .notas{
-	background-color:
-		rgba(210,210,210,0.3);
+	background-color: rgba(210,210,210,0.3);
 	padding: 10px;
 	
-	height: 130px; 
-	border: 1px solid black;
 	float: right;
-	margin: 10px 10px 0 0; 
-	padding: 1px;
+	width: 260px;
+	border-radius: 10px;
+	border-collapse: collapse;
+	border: 2px solid black;
 }
 
 .notas h3{
@@ -94,7 +95,10 @@ a:hover { // :focus, :visited, :active
 table{
 	width: 100%;
 	margin: 0 auto;
+
 }
 tr, td, th{
+	border-radius: 10px;
+	border-collapse: collapse;
 	border: 2px solid white;
 }
