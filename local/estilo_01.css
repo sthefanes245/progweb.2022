@@ -6,27 +6,32 @@
 body{
 	font-family: "Lucida Sans Unicode", Verdana, sans-serif;
 	  line-height: 1.6;
+	  
 	
 }
 /*muda a borda, e margens, cor das bordas... do 'quadrado' principal */
 .lugar {
-	border-color: #FFFAF0;
+/* altera as bordas */
+	border-color: #1C1C1C;
 	border-style: solid;
 	border-width: 1px;
 	margin-bottom: 30px;
 	padding: 20px;
+	background-color: #808080;
+	/*texto justificado */
+	text-align: justify;
 
 }
-
+/*altera as linhas pontilhadas */
 .lugar h2 {
 	
-	border-bottom: 1px dashed #F5F5F5;
+	border-bottom: 1px dashed #1C1C1C;
 	margin: 1px;
 }
-
+/* altera o fundo */
 body {
 	background: #FFFAF0 url('noise.png');
-	background-color: rgba(201, 76, 76, 0.3);
+	background-color: #4F4F4F;
 }
 
 /*Muda o "clique aqui para mais informações" */
@@ -61,25 +66,25 @@ a:hover { // :focus, :visited, :active
 	tetx-align:center;
 	font-size: 12px;
 }
-
+/*altera a tabela notas */
 .notas{
-	background-color: rgba(210,210,210,0.3);
-	padding: 10px;
+	background-color: #808080;
+	padding: 20px;
 	
 	float: right;
 	width: 260px;
-	border-radius: 10px;
+
 	border-collapse: collapse;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 .notas h3{
-	font-size: 12px;
+	font-size: 14px;
 	margin-top: 0;
 }
 
 .notas ol{
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .tudo {
@@ -92,13 +97,25 @@ a:hover { // :focus, :visited, :active
 	width: 260px;
 }
 
+
+
+
 table{
 	width: 100%;
 	margin: 0 auto;
-
+	border: 1px solid #1C1C1C;
 }
+
 tr, td, th{
-	border-radius: 10px;
+	border-radius: 5px;
 	border-collapse: collapse;
-	border: 2px solid white;
+	border-color: #1C1C1C;
+	background-color: #808080;
+}
+
+.mapa{
+	float: right;
+	width: 260px;
+	
+	padding: 30px;
 }
