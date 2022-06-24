@@ -118,7 +118,7 @@ tr, td, th{
 	padding: 30px;
 	
 	background-color: #808080;
-	padding: 20px;
+	padding: 18px;
 
 	border-collapse: collapse;
 	border: 1px solid black;
