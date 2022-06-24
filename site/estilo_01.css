@@ -98,8 +98,6 @@ a:hover { // :focus, :visited, :active
 }
 
 
-
-
 table{
 	width: 100%;
 	margin: 0 auto;
@@ -118,4 +116,24 @@ tr, td, th{
 	width: 260px;
 	
 	padding: 30px;
+	
+	background-color: #808080;
+	padding: 20px;
+
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.forms{
+	background-color: #808080;
+	padding: 20px;
+	
+	float: right;
+	width: 260px;
+
+	border-collapse: collapse;
+	border: 1px solid black;
+	float: right;
+	width: 260px;
+	
 }
