@@ -137,3 +137,18 @@ tr, td, th{
 	width: 260px;
 	
 }
+
+.seletor {
+	width: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.seletor div {
+	background-color #AFA;
+}
+
+.seletor > div {
+	color: #00F;
+	font-size: 20px;
+}
