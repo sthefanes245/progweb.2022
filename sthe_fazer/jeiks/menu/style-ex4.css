@@ -1,0 +1,79 @@
+/* 1:
+   definir o container como flex (só um alinha ou coluna)
+   e seus itens apresentados como coluna*/
+.container {
+    display: flex;
+    padding: 0px 0px 10px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    user-select: none;
+}
+
+/* 2:
+   sumir com o input checkbox: */
+.container input {
+    display: none;
+}
+
+/* 3:
+   vamos mover o checkmark para não atrapalhar o layout */
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30px;
+}
+
+/* 4:
+   Vamos tirar o estilo da lista:
+*/
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 5:
+   vamos definir o tamanho dos li como 0 (zero) quando o menu estiver fechado */
+.container input ~ ul li {
+    max-height: 0;
+    opacity: 0;
+    transition: all .3s ease-in-out; /*animação para expandir e fechar a lista*/
+}
+
+/* 6:
+   vamos colocar o ícone para o menu fechado e definir seu cursor */
+.checkmark::after {
+    position: relative;
+    top: -2px;
+    content: "\2630";
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out; /*animação para mudar o conteúdo do after */
+}
+
+/* 7:
+   vamos mudar o ícone do menu quando ele abrir, ou seja, input:checked */
+.container input:checked ~ .checkmark::after {
+    content: "\2715";
+    font-size: 29px;
+}
+
+/* 8:
+   e vamos aumentar o tamanho dos li para o menu expandido */
+.container input:checked ~ ul li {
+    min-height: 0.8em;
+    padding: 0.5em;
+    opacity: 1;
+    margin: 0px 0px 5px 10px;
+}
+
+/* 9: para o link do "a" não atrapalhar o menu */
+/* quando o menu estiver fechado: */
+.container input ~ ul li a {
+    display: none;
+}
+/* quando o menu estiver expandido: */
+.container input:checked ~ ul li a {
+    display: block;
+}

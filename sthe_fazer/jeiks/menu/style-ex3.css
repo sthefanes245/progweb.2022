@@ -1,0 +1,33 @@
+/* Estilo para o exemplo 3 */
+/* (1) */
+#menu {
+    display: flex;
+    border: 1px solid black;
+    min-height: 20px; /* só para visualização do exemplo */
+}
+/* (2) */
+#menu > input[type="checkbox"] {
+    /* alguns locais, como w3schools, ensinam isso:
+        opacity: 0;
+        width: 0;
+        height: 0;
+    Mas assim fica melhor, pois evita que ele consuma espaço: */
+    display: none;
+}
+/* (3) */
+/* Poderia ser: #menu span
+    o "input ~" foi colocado só pra frisar a diferença com o (4)
+    Obs: o "+" é referente ao primeiro elemento posterior do mesmo pai
+        o "~" é ferente a qualquer elemento posterior do mesmo pai */
+#menu input ~ span {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+}
+/* (4) */
+#menu input:checked ~ span {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(43, 128, 134);
+}
