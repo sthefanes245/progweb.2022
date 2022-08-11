@@ -1,0 +1,143 @@
+.container {
+	 margin: 0 auto;
+/* margem superior e inferior com 0 (zero),
+ o 'auto' cuida das margens laterais,
+ já centralizando o conteúdo. */
+	 width: 960px;
+ }
+
+body {
+	font_family: "Lucida Sans Unicode", Verdana, sans-serif;
+	line_height: 1.6;
+	background: #9faac3 url('noise.png');
+}
+
+
+.cabecalho {
+	border-color: #CCC #999 #999 #CCC; /*muda a cor da borda*/
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom: 20px; /*da um espaço entre os quadradinhos*/
+	padding: 10px;
+	/*cor para o fundo do cabeçalho */
+	background-color: rgba(210, 210, 210, 0.3);
+}
+
+
+/*configurações do primeiro lugar */
+.lugar {
+	border-color: #CCC #999 #999 #CCC;
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom: 30px;
+	padding: 20px;
+	text-align: justify; /* testo justificado */
+	/*aplicando cor ao fundo dos divs dos quadrados */
+	background-color: rgba(210, 210, 210, 0.3);
+}
+.lugar a{ /*da tipo um negrito no clique aqui*/
+	color: #2C11AF;
+	font-weight: bold; 
+}	
+a:hover { // :focus, :visited, :active  /*quando vc passa o mouse pelo "clique aqui para mais informações" ele muda de cor*/
+	color: white;
+	background-color: black;
+}
+
+
+.lugar img { /*muda a imagem*/
+	height: 360px;
+	border: 1px solid black;
+	float: left;
+	margin: 10px 10px 0 0;
+	padding: 2px;
+}
+
+.lugar h2{ /* coloca uma linha pontihada abaixo do titulo e da um estilo diferente para ele*/
+	border-bottom: 1px dashed #5C6818;
+	margin: 0;
+}
+
+.clear { /*vai deixar as imagens certas, esse clear significa que não quer nenhum float dos lados*/
+	clear: both;
+}
+
+.notas { /*deu uma cor de fundo para notas*/
+	background-color: rgba(210, 210, 210, 0.3);
+	padding: 10px;
+	/*colocando a classe notas para ficar à direita e ocupar o restante dos pixeis*/
+	float: right;
+	width: 260px; 
+	/*acrescenta borda  */
+	border-color: #CCC #999 #999 #CCC;
+	border-style: solid;
+	border-width: 1px;
+	
+}
+.notas h3 { /*deixa a fonte menor */
+	font-size: 14px;
+	margin-top: 0;
+	/* coloca uma linha pontihada abaixo do titulo e da um estilo diferente para ele*/
+	border-bottom: 1px dashed #5C6818;
+	margin: 0;
+} 
+.notas ul { /*deixa a fonte menor */
+	font-size: 12px;
+}
+
+.todoslugares {/* para colocar os locais a esquerda da pagina e depois colocar as notas a direita*/
+	float: left;
+	width: 660px;
+}
+
+table{
+	width: 100%;
+	margin: 0 auto;
+	border-color: #CCC #999 #999 #CCC; /* deixa a bordas iguais a do resto*/
+	border-style: solid;
+	border-width: 1px;
+}
+
+tr, td, th{
+	background-color: rgba(210, 210, 210, 0.3);
+	padding: 6px;/*tamanho da letra*/
+	border-radius: 5px; /* bordas arredondadas*/
+	background-color: #808080; /*cor de cada celula da tabela*/
+}
+
+.mapa {
+	display: block;
+	border-style: none;
+	margin: 0 auto;
+	float: right;
+	width: 260px;
+}
+
+form h3 {
+	border-bottom: 1px dashed #5C6818;
+	margin: 0;
+}
+
+.footer{
+	tetx-align:center;
+	font-size: 12px;
+}
+
+
+.linha::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+
+@media only screen and (min-width: 768px) {
+ /* Para desktops: */
+ .col-1 {width: 25%;}
+ .col-2 {width: 75%;}
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
