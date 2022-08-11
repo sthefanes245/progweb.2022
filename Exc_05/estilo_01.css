@@ -1,0 +1,132 @@
+body {
+	background-color: yellow;
+}
+
+@media screen and (max-width: 600px) { /*vai mudar a cor do fundo quando a tela ficar menor */
+ body {
+ background-color: lightblue;
+ }
+ div.container {
+ display: none;
+ }
+}
+
+.container01 {
+	background-color: red;
+	width: 250px;
+}
+.container02 {
+	background-color: green;
+	width: 250px;
+	padding: 0 25px;
+}
+* {
+	box-sizing: border-box; /*deixa tudo alinhado*/
+}
+
+section { /*cria uma 'caixa' como o texto no centro da pagina*/
+	border: 1px solid #000;
+	height: 100px;
+	margin: 40px auto;
+	width: 400px;
+}
+
+h1 { /*esse deixa mais estilizado, bem chique*/
+	background-color: #990000;
+	color: #FFF;
+	font-size: 1.2em;
+	left: -10px; padding: 5px 0;
+	position: relative;
+	text-align: center;
+	width: 420px;
+ 
+	font-family: 'Press Start 2P', cursive; /*mudando fonte*/
+}
+
+h1::before {
+	border: 5px solid #7C0000;
+	content: "";
+	left: 0;
+	position: absolute;
+	top: -10px;
+}
+
+h1::before { 
+	border-color: transparent #7C0000 #7C0000 transparent; /*borda mais certinha da parte vermelha */
+	border-style: solid; 
+	border-width: 5px;
+	content: ""; 
+	left: 0;
+	position: absolute; 
+	top: -10px; 
+}
+
+h1::after { /* borda do lado direito*/
+	border-color: transparent transparent #7C0000 #7C0000;
+	border-style: solid; 
+	border-width: 5px;
+	content: ""; 
+	right: 0;
+	position: absolute; 
+	top: -10px; 
+}
+
+.help { /*Um quadradinho com um texto de ajuda muito legalzinho */
+	background-color: #F1EFE6;
+	border: 1px solid #D3CDAE;
+	font-size: 0.9em;
+	padding: 10px;
+	position: relative;
+	width: 300px;
+}
+
+.help::before {
+	border-color:transparent #D3CDAE transparent transparent;
+	border-style: solid;
+	border-width: 14px;
+	content: "";
+	left: -28px;
+	margin-top: -14px;
+	position: absolute;
+	top: 50%;
+}
+
+.tip::before { /*uma curiosidade*/
+	content: "\261E";
+	margin-right: 10px;
+}
+
+blockquote { /*citação*/
+	color: #444;
+	font-style: italic;
+}
+
+blockquote::before, blockquote::after { /*adiciona aspas antes e depois da citação*/
+	color: #000;
+	font-size: 3em;
+}
+blockquote::before {
+	content: "\201C";
+}
+blockquote::after {
+	content: "\201D";
+}
+
+@media print {
+* {
+	background: transparent !important;
+	border-color: black !important;
+	box-shadow: none !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+a { 
+	text-decoration: underline !important;
+ }
+ a[href]::after {
+	content: ' (' attr(href) ')';
+}
+a[href^="javascript:"]::after, a[href^="#"]::after {
+	content: "";
+ }
+ 

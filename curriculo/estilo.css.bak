@@ -1,0 +1,11 @@
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+table, tr, td{
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid #1C1C1C;
+}
+
