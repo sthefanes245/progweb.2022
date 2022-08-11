@@ -1,0 +1,54 @@
+body {
+	font-family: Arial;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: #A3E4D7;
+	text-decoration: none;
+}
+
+.nav {
+	display: flex;
+	background-color: #2980B9;
+	padding: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	margin-left: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.imagens {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.imagens > div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+	text-align: center;
+}
