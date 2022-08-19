@@ -1,0 +1,44 @@
+.nav {
+    border: 1px solid black;
+    position: sticky;
+    /*menu fixo*/
+    top: 0;
+    background-color: rgba(68, 67, 67, 0.579);
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*três colunas */
+    justify-content: space-between;
+    /*espaçamento entre, deixa cada palavra em um lado, esqueda, meio e direita */
+}
+
+.nav .menu a {
+    text-decoration: none;
+    /*tira o sublinhado */
+    color: rgba(0, 0, 0, 0.488);
+    height: 40px;
+    line-height: 2.5;
+	color: white;
+
+}
+
+.container>img {
+    width: 100%;
+}
+
+.text {
+    position: relative;
+}
+
+.viloes{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.viloes img {
+    height: 100%;
+    width: 100%;
+}
