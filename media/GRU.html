@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> MEU MALVADO FAVORITO </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+@media only screen and (min-width: 600px){
+.col-1 {width: 25%;}
+.col-2 {width: 75%;}
+.col-3 {width: 100%;}
+
+}
+@media only screen and (min-width: 768px){
+.col-1 {width: 25%;}
+.col-2 {width: 50%;}
+.col-3 {width: 25%;}
+}
+img{
+display: block;
+max-width: 100%;
+height: auto;
+margin: 0 auto;
+
+}
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+.header {
+  background-color: #442946;
+  color: #ffde07;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #442946;
+  color: #ffde07;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #442946;
+  padding: 15px;
+  color: #ffde07;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #442946;
+  color: #ffde07;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MEU MALVADO FAVORITO</h1>
+</div>
+
+<div class="row">
+  <div class="col-1 menu">
+    <ul>
+      <li>GRU</li>
+      <li>Os Minions</li>
+      <li>As Meninas</li>
+      <li>Lucy</li>
+    </ul>
+  </div>
+
+  <div class="col-2">
+    <h1>GRU</h1>
+    <p>Gru é o personagem principal do filme, na qual conta as suas aventuras e mostra o seu trabalho. Gru, adota 3 garotinhas e tem um "exército" de minions na qual o ajudam nas suas mais malignas aventuras.</p>
+	<picture>
+	<source srcset="minions.png" media="(max-width: 400px)">
+	<source srcset="gru.jpg">
+	<img src="gru.jpg" style="width; auto;">
+	<picture>
+  </div>
+  
+
+  <div class="col-3">
+    <div class="aside">
+      <h2>O que é?</h2>
+      <p>Programação Web é desenvolver para o mercado atual.</p>
+      <h2>Onde?</h2>
+      <p>Qualquer dispositivo móvel e computadores.</p>
+      <h2>Como?</h2>
+      <p>Através da explosão da web semântica.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <p>Redimensione seu navegador para ver como o conteúdo responde aos novos tamanhos da página/janela.</p>
+</div>
+
+
+
+</body>
+</html>
